@@ -1,0 +1,23 @@
+name: Hello world
+
+on:
+  push:
+    branches: [main]
+  pull_requests:
+    branches: [main]
+
+jobs:
+
+  hello-world:
+    name: hello
+    runs-on: ubuntu-latest
+    steps:
+      - 
+      name: say hello world
+      run: echo "Hello world!"
+      - 
+      name: say goodbye
+      runs: |
+        echo "Thank you."
+        echo "Good bye!"
+
